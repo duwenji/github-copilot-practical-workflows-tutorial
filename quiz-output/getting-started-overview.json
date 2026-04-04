@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "この教材が重視している学習軸として最も適切なものはどれですか？",
+      "options": [
+        { "id": "A", "text": "GitHub と Copilot を実務シナリオで学ぶ" },
+        { "id": "B", "text": "Git コマンドだけを暗記する" },
+        { "id": "C", "text": "VS Code の設定だけを学ぶ" },
+        { "id": "D", "text": "UI デザインだけを学ぶ" }
+      ],
+      "correctAnswer": "A",
+      "explanation": "この教材は、GitHub と GitHub Copilot を機能一覧ではなく、現場で起こる実務シナリオに沿って学ぶ構成です。"
+    }
+  ]
+}

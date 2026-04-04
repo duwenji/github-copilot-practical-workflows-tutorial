@@ -1,0 +1,6 @@
+title: GitHub + GitHub Copilot 実務シナリオ完全チュートリアル
+description: GitHub と GitHub Copilot を実務シナリオで学ぶ日本語教材
+baseurl: "/github-copilot-practical-workflows-tutorial"
+url: "https://duwenji.github.io"
+theme: minima
+markdown: kramdown

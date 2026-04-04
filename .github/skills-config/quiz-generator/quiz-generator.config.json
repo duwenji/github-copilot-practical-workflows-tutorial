@@ -1,0 +1,8 @@
+{
+  "metadataPath": "./quiz-output/quizSets.json",
+  "normalizeDataDir": "./quiz-output",
+  "questionGlobs": [
+    "./quiz-output/*.json",
+    "./quiz-output/**/*.json"
+  ]
+}

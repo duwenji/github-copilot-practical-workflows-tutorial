@@ -1,0 +1,12 @@
+{
+  "projectName": "github-copilot-practical-workflows-tutorial",
+  "sourceRoot": "./docs",
+  "outputDir": "./ebook-output",
+  "formats": ["epub"],
+  "enablePageList": false,
+  "chapterDirPattern": "^\\d{2}-",
+  "chapterFilePattern": "^\\d{2}-.*\\.md$",
+  "coverFile": "00-COVER.md",
+  "metadataFile": "./.github/skills-config/ebook-build/github-copilot-practical-workflows-tutorial.metadata.yaml",
+  "preserveTemp": false
+}

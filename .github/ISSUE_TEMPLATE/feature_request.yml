@@ -1,0 +1,32 @@
+name: Feature request
+description: 教材に追加したい実務シナリオや改善案を提案します
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 背景・課題
+      description: どんな実務上の課題を解決したいですか？
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+      description: 追加したい章、テンプレート、演習など
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 関連シナリオ
+      options:
+        - Onboarding
+        - Daily Development
+        - Collaboration
+        - Shared Assets
+        - Release / Hotfix
+        - Governance

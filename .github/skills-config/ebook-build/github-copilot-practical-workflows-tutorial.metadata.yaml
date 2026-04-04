@@ -1,0 +1,30 @@
+title: "GitHub + GitHub Copilot 実務シナリオ完全チュートリアル"
+subtitle: "日常開発、協業、共有資産管理、リリース運用を一気通貫で学ぶ"
+author: "杜 文吉"
+date: "2026-04-04"
+language: ja
+publisher: "GitHub"
+rights: "Creative Commons Attribution 4.0 International License"
+description: |
+  GitHub と GitHub Copilot を、実務で起こる代表シナリオに沿って学ぶ日本語教材です。
+  日常開発だけでなく、fork/upstream、submodule/subtree、release/hotfix、
+  チーム標準化とガバナンスまでを一冊で扱います。
+keywords:
+  - GitHub
+  - GitHub Copilot
+  - Git
+  - Pull Request
+  - upstream
+  - submodule
+  - subtree
+cover: "00-COVER.md"
+toc-depth: 2
+chapters:
+  auto-discover: true
+  dir-pattern: "^\\d{2}-"
+  file-pattern: "^\\d{2}-.*\\.md$"
+include-readme: false
+version: "0.1"
+revision-date: "2026-04-04"
+license: "CC-BY-4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/"
