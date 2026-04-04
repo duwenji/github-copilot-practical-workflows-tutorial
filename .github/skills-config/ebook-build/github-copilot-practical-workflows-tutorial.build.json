@@ -7,6 +7,9 @@
   "chapterDirPattern": "^\\d{2}-",
   "chapterFilePattern": "^\\d{2}-.*\\.md$",
   "coverFile": "00-COVER.md",
+  "mermaidMode": "auto",
+  "mermaidFormat": "svg",
+  "failOnMermaidError": false,
   "metadataFile": "./.github/skills-config/ebook-build/github-copilot-practical-workflows-tutorial.metadata.yaml",
   "preserveTemp": false
 }
