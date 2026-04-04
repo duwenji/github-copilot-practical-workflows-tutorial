@@ -10,6 +10,18 @@ git add .
 git commit -m "Add quiz filter to selector"
 ```
 
+## コマンドと引数の意味
+
+- `git add .`
+  - `add`: commit 対象として staging する
+  - `.`: 現在フォルダー以下の変更をまとめて対象にする
+- `git commit -m "Add quiz filter to selector"`
+  - `commit`: staging 済み変更を履歴として記録する
+  - `-m`: commit message をその場で指定する
+  - `"Add quiz filter to selector"`: 変更内容を表すメッセージ
+
+> まとめて `git add .` したときは、`git status` で意図しないファイルが入っていないか確認すると安全です。
+
 ## PR の基本
 
 PR には少なくとも以下を含めます。

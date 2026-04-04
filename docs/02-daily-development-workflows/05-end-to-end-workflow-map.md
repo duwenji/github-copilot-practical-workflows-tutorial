@@ -15,6 +15,21 @@ flowchart TD
     I --> J[main に merge]
 ```
 
+## 対応するコマンド例
+
+```powershell
+git pull origin main
+git switch -c feature/my-task
+git add .
+git commit -m "Describe change"
+git push origin feature/my-task
+```
+
+- `git pull origin main`: 作業前に `main` を最新化する
+- `git switch -c feature/my-task`: 新しい作業 branch を作る
+- `git add .` / `git commit -m "..."`: 変更を記録する
+- `git push origin feature/my-task`: PR 用に remote へ送る
+
 ## ポイント
 
 - `Issue` で目的を確認してから branch を切ると、変更範囲がぶれにくくなります。

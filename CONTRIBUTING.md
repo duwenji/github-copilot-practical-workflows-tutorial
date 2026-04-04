@@ -17,6 +17,18 @@
 5. `npm run ebook:build` を実行する
 6. `Pull Request` を作成する
 
+### コマンド補足
+
+- `npm run quiz:validate`
+  - `run`: `package.json` の script を実行する
+  - `quiz:validate`: quiz 全体を検証する script 名
+  - **目的:** schema やデータ整合性の崩れを PR 前に検出する
+- `npm run ebook:build`
+  - `run`: `package.json` の script を実行する
+  - `ebook:build`: ebook 出力を生成する script 名
+  - **目的:** 公開物の build エラーやリンク崩れを早めに見つける
+- 必要に応じて `npm run quiz:normalize` で quiz データの表記ゆれを整えてから再検証する
+
 ## レビュー観点
 
 - 実務で使える内容になっているか

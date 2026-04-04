@@ -11,6 +11,22 @@
 - `merge` — 履歴をそのまま残しつつ統合する
 - `rebase` — 履歴をきれいに並べ替えて取り込む
 
+## 代表的なコマンド例
+
+```powershell
+git merge upstream/main
+git rebase main
+```
+
+- `git merge upstream/main`
+  - `merge`: 別系統の履歴を現在 branch へ統合する
+  - `upstream/main`: 取り込み元ブランチ
+- `git rebase main`
+  - `rebase`: 現在の変更を `main` の先頭へ載せ直す
+  - `main`: 新しい土台にしたい branch
+
+> `rebase` は履歴がきれいになる一方で、共有済み branch では扱いに注意が必要です。迷う場合はチーム標準に従うのが安全です。
+
 ## どちらを使うか
 
 - チーム標準があるならそれに従う

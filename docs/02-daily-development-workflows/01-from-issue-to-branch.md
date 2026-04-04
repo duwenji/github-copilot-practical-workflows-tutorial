@@ -22,6 +22,19 @@ git pull origin main
 git switch -c feature/add-quiz-filter
 ```
 
+## コマンドと引数の意味
+
+- `git pull origin main`
+  - `pull`: remote の変更を取得し、現在 branch に反映する
+  - `origin`: ふだん自分が push する remote 名
+  - `main`: 最新化の基準にする branch 名
+- `git switch -c feature/add-quiz-filter`
+  - `switch`: branch を切り替える
+  - `-c`: branch を新規作成する
+  - `feature/add-quiz-filter`: 作業内容が分かる branch 名
+
+> branch を切る前に `main` を最新化しておくと、あとから不要な競合を減らしやすくなります。
+
 ## Copilot の使いどころ
 
 - 「この Issue の作業ステップを 5 つに分けて」

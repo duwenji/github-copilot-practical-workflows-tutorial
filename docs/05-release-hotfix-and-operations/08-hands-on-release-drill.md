@@ -12,6 +12,21 @@
 4. hotfix にする場合の最小修正方針を書く
 5. rollback 判断の条件を書く
 
+## 事前確認で使うコマンド
+
+```powershell
+npm run quiz:validate
+npm run ebook:build
+```
+
+- `npm run quiz:validate`
+  - `run`: `package.json` の script を実行する
+  - `quiz:validate`: quiz / metadata の整合性を確認する
+- `npm run ebook:build`
+  - `ebook:build`: ebook 出力を生成し、公開前の build 成否を確認する
+
+> release 候補を判断するときは、「内容が良さそうか」だけでなく、**検証コマンドが通るか** を必ずセットで見ます。
+
 ## Copilot への依頼例
 
 - 「この差分から release note を 3 行でまとめて」

@@ -21,6 +21,15 @@
 git switch -c feature/sample-improvement
 ```
 
+## コマンドと引数の意味
+
+- `git switch -c feature/sample-improvement`
+  - `switch`: branch を切り替える
+  - `-c`: 新しい branch を作成する
+  - `feature/sample-improvement`: 手を入れる内容が分かる branch 名
+
+> まずは小さめの改善 Issue を選び、branch 名にも目的が出るようにしておくと PR レビュー時に伝わりやすくなります。
+
 ## Copilot への依頼例
 
 - 「この Issue を実装ステップに分けて」

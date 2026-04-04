@@ -7,8 +7,11 @@
 
 ## Commands
 - [ ] `npm install`
+  - 依存関係をインストールする
 - [ ] `npm run quiz:validate`
+  - quiz / metadata の整合性を検証する
 - [ ] `npm run ebook:build`
+  - ebook 出力を生成して build エラーを確認する
 
 ## Content quality
 - [ ] `Issue → Branch → PR → Review → Merge` が説明されている

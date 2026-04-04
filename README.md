@@ -9,6 +9,8 @@
 
 > 機能の説明だけでなく、`Issue → Branch → PR → Review → Merge`、`fork/upstream`、`submodule/subtree`、`release/hotfix`、チーム標準化までを一気通貫で扱います。
 
+> 🧭 **補完教材:** これらの実務シナリオを組織標準へ落とし込むときは、[開発プロセス標準化 Skill ライブラリ](https://github.com/duwenji/dev-process-skill-library) を併用すると、要件整理・品質ゲート・リリース判断までつなげやすくなります。
+
 ---
 
 ## この教材で学べること
@@ -133,9 +135,16 @@ npm install
 code .
 ```
 
+- `git clone <repo-url>`: GitHub 上の repository をローカルへ複製する。`<repo-url>` には clone 用 URL を入れる
+- `cd github-copilot-practical-workflows-tutorial`: 作業ディレクトリへ移動する。`cd` は current directory の略
+- `npm install`: `package.json` に定義された依存関係をインストールする
+- `code .`: 現在フォルダーをそのまま VS Code で開く
+
+> 💡 コマンドや引数の詳しい意味は [`docs/07-reference-and-scenario-playbook/01-command-cheatsheet.md`](docs/07-reference-and-scenario-playbook/01-command-cheatsheet.md) を参照してください。
+
 1. `README.md` で全体像を確認する
 2. `docs/01-getting-started-and-onboarding/` から読み始める
-3. 必要に応じて `npm run quiz:validate` と `npm run ebook:build` を実行する
+3. 必要に応じて `npm run quiz:validate`（quiz 検証）と `npm run ebook:build`（ebook build 確認）を実行する
 4. ハンズオンでサンプル repo を使いながら手を動かす
 
 ---

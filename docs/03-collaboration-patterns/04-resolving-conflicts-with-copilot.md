@@ -17,6 +17,20 @@
 3. Copilot に差分の意味を説明させる
 4. 人が最終判断して解消する
 
+## よく使うコマンド
+
+```powershell
+git status
+git add <resolved-file>
+git commit
+```
+
+- `git status`: どのファイルが conflict 中かを確認する
+- `git add <resolved-file>`
+  - `<resolved-file>`: 解消が終わったファイルパス
+  - 解消完了を Git に知らせる意味がある
+- `git commit`: conflict 解消結果を commit として確定する
+
 ## 依頼例
 
 - 「この 2 つの変更の違いを要約して」

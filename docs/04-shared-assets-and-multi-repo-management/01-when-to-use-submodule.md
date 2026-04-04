@@ -21,6 +21,18 @@
 - 更新方法をチームで統一しないと混乱しやすい
 - 初学者には少し分かりにくい
 
+## 代表的なコマンド
+
+```powershell
+git submodule update --init --recursive
+```
+
+- `update`: 登録済み submodule を現在の指定 revision に合わせる
+- `--init`: 未初期化の submodule を初期化する
+- `--recursive`: 入れ子になった submodule までまとめて処理する
+
+> shared assets を初めて取得した直後に実行することが多いコマンドです。
+
 ## Copilot の使いどころ
 
 - `submodule` 更新手順の説明作成

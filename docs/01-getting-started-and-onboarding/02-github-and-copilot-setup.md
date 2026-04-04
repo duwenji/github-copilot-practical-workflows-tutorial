@@ -35,6 +35,19 @@ git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
+## コマンドと引数の意味
+
+- `git config --global user.name "Your Name"`
+  - `config`: Git の設定値を確認・変更する
+  - `--global`: 現在のユーザー環境全体に適用する
+  - `user.name`: commit 作成者名の設定キー
+  - `"Your Name"`: 表示したい名前
+- `git config --global user.email "you@example.com"`
+  - `user.email`: commit 作成者メールアドレスの設定キー
+  - `"you@example.com"`: GitHub と整合するメールアドレスを入れる
+
+> 会社用アカウントと個人アカウントを使い分ける場合は、どのメールアドレスで commit が記録されるかを先に確認しておくと安全です。
+
 ## 実務上の確認ポイント
 
 - 会社の GitHub 組織に参加済みか

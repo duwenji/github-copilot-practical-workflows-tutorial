@@ -3,6 +3,8 @@
 ## release 前
 - [ ] 対象変更が揃っている
 - [ ] CI が通っている
+- [ ] `npm run quiz:validate` を実行して教材データの整合性を確認した
+- [ ] `npm run ebook:build` を実行して公開物の build 成功を確認した
 - [ ] release note を準備した
 
 ## hotfix 時

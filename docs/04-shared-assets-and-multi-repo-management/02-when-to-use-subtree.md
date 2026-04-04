@@ -24,3 +24,17 @@
 
 - 更新の流れを理解していないと差分管理が難しい
 - 共有元との同期方針を先に決める必要がある
+
+## 代表的なコマンド
+
+```powershell
+git subtree add --prefix=shared-assets SHARED_REMOTE main --squash
+```
+
+- `subtree add`: 別 repo の内容を現在 repo 配下へ取り込む
+- `--prefix=shared-assets`: 取り込み先フォルダーを指定する
+- `SHARED_REMOTE`: 共有元 remote 名
+- `main`: 取り込む共有元 branch
+- `--squash`: 履歴を 1 つのまとまりとして取り込む
+
+> `subtree` は利用側の操作を簡単にしやすい一方で、どの `prefix` に何を取り込むかを明確にしておくことが大切です。 

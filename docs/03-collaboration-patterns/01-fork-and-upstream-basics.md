@@ -26,6 +26,21 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git
 git fetch upstream
 ```
 
+## コマンドと引数の意味
+
+- `git remote -v`
+  - `remote`: 登録済み remote を扱う
+  - `-v`: URL を含めて詳しく表示する
+- `git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git`
+  - `add`: 新しい remote を登録する
+  - `upstream`: 本家 repo を表す慣例名
+  - `https://github.com/ORIGINAL_OWNER/REPO.git`: 本家の clone URL
+- `git fetch upstream`
+  - `fetch`: 最新履歴を取得する
+  - `upstream`: 取得元 remote 名
+
+> まず `git remote -v` で今の接続先を確認してから `upstream` を追加すると、push 先の取り違えを減らせます。
+
 ## Copilot の使いどころ
 
 - `origin` と `upstream` の違いが混乱したときの整理

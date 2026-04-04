@@ -10,6 +10,20 @@ cd <repo-name>
 git remote -v
 ```
 
+## コマンドと引数の意味
+
+- `git clone <repo-url>`
+  - `clone`: repository をローカルへ複製する
+  - `<repo-url>`: GitHub 上の clone 用 URL
+- `cd <repo-name>`
+  - `cd`: 作業ディレクトリを移動する
+  - `<repo-name>`: clone 後に作成されたフォルダー名
+- `git remote -v`
+  - `remote`: 登録済みリモートを扱う
+  - `-v`: URL を含めて詳しく表示する (`verbose`)
+
+> `git clone` した直後は、clone 元が通常 `origin` として自動登録されます。まず `git remote -v` で向きを確認すると安心です。
+
 ## 初回に確認する項目
 
 - 依存関係のインストール方法

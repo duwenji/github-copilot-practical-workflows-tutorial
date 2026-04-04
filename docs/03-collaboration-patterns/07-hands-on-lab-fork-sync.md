@@ -23,6 +23,21 @@ git fetch upstream
 git merge upstream/main
 ```
 
+## コマンドと引数の意味
+
+- `git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git`
+  - `add`: remote を登録する
+  - `upstream`: 本家 repo の慣例名
+  - `https://github.com/ORIGINAL_OWNER/REPO.git`: 本家 URL
+- `git fetch upstream`
+  - `fetch`: 最新履歴を取得する
+  - `upstream`: 取得元 remote 名
+- `git merge upstream/main`
+  - `merge`: 取得した履歴を現在 branch に反映する
+  - `upstream/main`: 本家 `main` の参照先
+
+> `fetch` と `merge` を分けて実行すると、「取得だけした状態」で差分確認しやすくなります。
+
 ## 完了条件
 
 - `origin` と `upstream` の役割を説明できる

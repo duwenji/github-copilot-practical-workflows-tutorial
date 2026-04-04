@@ -16,8 +16,14 @@
 ## 事前確認
 
 - `npm run quiz:validate`
+  - `run`: `package.json` に定義した script を実行する
+  - `quiz:validate`: quiz データを一括検証する script 名
 - `npm run ebook:build`
+  - `run`: `package.json` に定義した script を実行する
+  - `ebook:build`: ebook 出力を生成して build 状態を確認する script 名
 - `README` と `docs/index.md` のリンク確認
+
+> quiz の形式ゆれを先に整えたい場合は、`npm run quiz:normalize` を使ってから `npm run quiz:validate` を再実行すると整理しやすいです。
 
 ## 注意点
 
