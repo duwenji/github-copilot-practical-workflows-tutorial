@@ -1,21 +1,24 @@
 # submodule / subtree の見え方を図で整理する
 
-## `submodule`
+## 全体イメージ
+
+### `submodule`
 
 ```mermaid
-flowchart TD
-    A[Main Repo] --> B[Pointer to Shared Repo]
-    C[Shared Repo] --> B
+flowchart LR
+    A[Main Repo] --> B[.gitmodules / commit pointer]
+    B --> C[Shared Repo]
 ```
 
-## `subtree`
+### `subtree`
 
 ```mermaid
-flowchart TD
-    A[Main Repo] --> B[Imported Shared Folder with history]
+flowchart LR
+    D[Main Repo] --> E[shared/ folder<br/>history included]
 ```
 
 ## 実務上の違い
 
-- `submodule` は参照先が独立している感覚が強い
-- `subtree` は取り込み側で完結しやすい
+- `submodule` は **外部 repo を参照** するため、共有元を独立して管理しやすいです。
+- `subtree` は **利用側 repo に取り込む** ため、clone や日常操作が分かりやすいです。
+- つまり、独立管理を優先するなら `submodule`、扱いやすさを優先するなら `subtree` が向きます。

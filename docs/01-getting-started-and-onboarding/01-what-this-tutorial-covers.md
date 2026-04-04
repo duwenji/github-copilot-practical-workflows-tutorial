@@ -15,8 +15,9 @@
 
 ## この教材の読み方
 
-- まずは `02-daily-development-workflows` を通して基本の流れをつかむ
-- 次に `03-collaboration-patterns` と `04-shared-assets-and-multi-repo-management` で実務の広がりを学ぶ
+- まずは `01-getting-started-and-onboarding` で `GitHub` / `VS Code` / `Copilot` の初期設定を済ませる
+- 次に `02-daily-development-workflows` を通して基本の流れをつかむ
+- その後 `03-collaboration-patterns` と `04-shared-assets-and-multi-repo-management` で実務の広がりを学ぶ
 - 最後に `05` と `06` で運用・標準化まで確認する
 
 ## Copilot を使う場面

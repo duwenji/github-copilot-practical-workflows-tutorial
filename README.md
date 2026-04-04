@@ -45,6 +45,14 @@
 | shared repo を扱う担当者 | `04-shared-assets-and-multi-repo-management` | `06-team-standards-and-governance` |
 | チーム標準を整えたいリード | `06-team-standards-and-governance` | `07-reference-and-scenario-playbook` |
 
+## 図で全体像をつかむなら
+
+- [`fork / upstream` の全体関係図](docs/03-collaboration-patterns/05-fork-upstream-visual-guide.md)
+- [日常開発の全体フローマップ](docs/02-daily-development-workflows/05-end-to-end-workflow-map.md)
+- [`submodule / subtree` の構造比較図](docs/04-shared-assets-and-multi-repo-management/05-submodule-subtree-visual-guide.md)
+- [release / hotfix の全体フロー図](docs/05-release-hotfix-and-operations/05-release-flow-diagram.md)
+- [図の見方と用語の凡例](docs/07-reference-and-scenario-playbook/09-diagram-legend.md)
+
 ---
 
 ## 目次
@@ -107,6 +115,7 @@
 - [サンプル PR 説明文](docs/07-reference-and-scenario-playbook/06-sample-pr-descriptions.md)
 - [サンプル Copilot Chat プロンプト](docs/07-reference-and-scenario-playbook/07-sample-copilot-chat-prompts.md)
 - [公開前チェックリスト](docs/07-reference-and-scenario-playbook/08-release-readiness-checklist.md)
+- [図の見方と用語の凡例](docs/07-reference-and-scenario-playbook/09-diagram-legend.md)
 
 ---
 

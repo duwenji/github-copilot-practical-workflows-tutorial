@@ -66,6 +66,7 @@
 - `docs/07-reference-and-scenario-playbook/06-sample-pr-descriptions.md`
 - `docs/07-reference-and-scenario-playbook/07-sample-copilot-chat-prompts.md`
 - `docs/07-reference-and-scenario-playbook/08-release-readiness-checklist.md`
+- `docs/07-reference-and-scenario-playbook/09-diagram-legend.md`
 
 ## 補助ファイル
 - `README.md`

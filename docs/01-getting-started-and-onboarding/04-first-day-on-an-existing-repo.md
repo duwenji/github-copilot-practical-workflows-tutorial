@@ -2,6 +2,7 @@
 
 ## チェックリスト
 
+- `GitHub` / `VS Code` / `Copilot` の初期セットアップが完了していることを確認する
 - `README` と開発ルールを読む
 - `Issue` 管理の流れを把握する
 - `copilot-instructions.md` があるなら読む
