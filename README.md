@@ -2,7 +2,7 @@
 
 `GitHub` と `GitHub Copilot` を、**実務で起こるシナリオ単位**で学ぶ日本語チュートリアルです。
 
-> 💡 ブラウザで https://duwenji.github.io/spa-quiz-app/ を開くと、この教材をクイズ形式で学習できます。
+> 💡 ブラウザで https://duwenji.github.io/spa-quiz-app/ を開くと、関連トピックをクイズ形式で復習できます。
 
 > 機能の説明だけでなく、`Issue → Branch → PR → Review → Merge`、`fork/upstream`、`submodule/subtree`、`release/hotfix`、チーム標準化までを一気通貫で扱います。
 
