@@ -4,9 +4,6 @@
 
 > 💡 ブラウザで https://duwenji.github.io/spa-quiz-app/ を開くと、この教材をクイズ形式で学習できます。
 
-> 🔁 クイズ同期時の更新基準は [docs/quiz-sync-guide.md](docs/quiz-sync-guide.md) を参照してください。
-
-
 > 機能の説明だけでなく、`Issue → Branch → PR → Review → Merge`、`fork/upstream`、`submodule/subtree`、`release/hotfix`、チーム標準化までを一気通貫で扱います。
 
 > 🧭 **補完教材:** これらの実務シナリオを組織標準へ落とし込むときは、[開発プロセス標準化 Skill ライブラリ](https://github.com/duwenji/dev-process-skill-library) を併用すると、要件整理・品質ゲート・リリース判断までつなげやすくなります。
@@ -144,7 +141,7 @@ code .
 
 1. `README.md` で全体像を確認する
 2. `docs/01-getting-started-and-onboarding/` から読み始める
-3. 必要に応じて `npm run quiz:validate`（quiz 検証）と `npm run ebook:build`（ebook build 確認）を実行する
+3. 必要に応じて `npm run ebook:build`（ebook build 確認）を実行する
 4. ハンズオンでサンプル repo を使いながら手を動かす
 
 ---
@@ -154,7 +151,7 @@ code .
 - `copilot-instructions.md` テンプレート
 - PR レビューチェックリスト
 - KPI / 導入効果測定テンプレート
-- Pages / ebook / quiz 連携
+- Pages / ebook 公開導線
 - [MASTER-INDEX](MASTER-INDEX.md)
 - [QUICK-REFERENCE](QUICK-REFERENCE.md)
 - [COMPLETION-REPORT](COMPLETION-REPORT.md)

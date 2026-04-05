@@ -6,8 +6,6 @@
 
 ## Verification
 
-- [ ] `npm run quiz:validate`  
-      quiz / metadata の整合性を確認済み
 - [ ] `npm run ebook:build`  
       ebook 出力の build 成功を確認済み
 - [ ] Links and docs structure still work

@@ -7,9 +7,6 @@
 - [ ] ライセンスが明記されている
 
 ## 検証
-- [ ] `npm run quiz:validate` が成功する
-  - `run`: `package.json` の script を実行する
-  - `quiz:validate`: quiz データと metadata の整合性を確認する script
 - [ ] `npm run ebook:build` が成功する
   - `run`: `package.json` の script を実行する
   - `ebook:build`: ebook 出力を生成して公開物を確認する script

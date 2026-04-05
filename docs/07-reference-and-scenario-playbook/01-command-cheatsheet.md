@@ -87,19 +87,6 @@
 
 ## このリポジトリ固有の `npm run` コマンド
 
-### `npm run quiz:validate`
-- **用途:** quiz データをまとめて検証する
-- **内部で呼ばれる処理:** `invoke-validate.ps1 -Mode all`
-- **引数の意味:**
-  - `run`: `package.json` の script を実行する
-  - `quiz:validate`: 実行する script 名
-- **注意:** PR 前の整合性チェックとして実行します。
-
-### `npm run quiz:normalize`
-- **用途:** quiz データの表記ゆれを正規化する
-- **内部で呼ばれる処理:** `invoke-validate.ps1 -Mode normalize`
-- **使いどころ:** 形式のゆれをそろえてから再検証したいとき
-
 ### `npm run ebook:build`
 - **用途:** ebook 出力を生成し、build エラーの有無を確認する
 - **内部で呼ばれる処理:** `invoke-build.ps1`

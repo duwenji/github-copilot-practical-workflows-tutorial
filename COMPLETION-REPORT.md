@@ -41,16 +41,7 @@
 
 ## 検証結果
 
-### 1. Quiz validation
-Command:
-```powershell
-npm run quiz:validate
-```
-Result:
-- `✓ All 5 quiz set metadata entries are valid!`
-- `✓ All 1 questions are valid!` × 5
-
-### 2. Ebook build
+### Ebook build
 Command:
 ```powershell
 npm run ebook:build

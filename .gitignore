@@ -2,7 +2,6 @@ node_modules/
 _site/
 ebook-output/
 cover-output/
-quiz-output/**/*.analysis.json
 .DS_Store
 Thumbs.db
 *.log

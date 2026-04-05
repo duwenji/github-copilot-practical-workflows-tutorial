@@ -27,8 +27,5 @@ jobs:
       - name: Setup Pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Validate quiz metadata and questions
-        run: npm run quiz:validate
-
       - name: Build ebook
         run: npm run ebook:build

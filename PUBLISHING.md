@@ -36,7 +36,6 @@ git push -u origin main
 ## 5. 公開前の確認
 
 ```powershell
-npm run quiz:validate
 npm run ebook:build
 ```
 

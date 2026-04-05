@@ -12,8 +12,6 @@
 
 ## Verification
 - Confirmed local UI behavior
-- Ran `npm run quiz:validate`  
-  - `quiz:validate`: quiz データや schema の整合性確認
 - Ran `npm run ebook:build`  
   - `ebook:build`: ebook 出力の build 成否確認
 ```
