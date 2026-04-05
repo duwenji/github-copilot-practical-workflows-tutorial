@@ -43,6 +43,8 @@ npm run ebook:build
 - `README.md` のリンク確認
 - `docs/index.md` の表示確認
 - `ebook-output/github-copilot-practical-workflows-tutorial.epub` の生成確認
+- `ebook-output/github-copilot-practical-workflows-tutorial.pdf` の生成確認
+- `ebook-output/github-copilot-practical-workflows-tutorial-kdp-registration.md` の生成確認
 
 ## 6. 公開後にやること
 

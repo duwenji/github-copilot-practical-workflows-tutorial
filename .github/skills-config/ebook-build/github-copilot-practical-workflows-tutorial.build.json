@@ -2,7 +2,7 @@
   "projectName": "github-copilot-practical-workflows-tutorial",
   "sourceRoot": "./docs",
   "outputDir": "./ebook-output",
-  "formats": ["epub"],
+  "formats": ["epub", "pdf", "kdp-markdown"],
   "enablePageList": false,
   "chapterDirPattern": "^\\d{2}-",
   "chapterFilePattern": "^\\d{2}-.*\\.md$",
@@ -11,5 +11,6 @@
   "mermaidFormat": "svg",
   "failOnMermaidError": false,
   "metadataFile": "./.github/skills-config/ebook-build/github-copilot-practical-workflows-tutorial.metadata.yaml",
+  "kdpMetadataFile": "./.github/skills-config/ebook-build/github-copilot-practical-workflows-tutorial.kdp.yaml",
   "preserveTemp": false
 }
