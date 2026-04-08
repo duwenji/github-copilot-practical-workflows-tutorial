@@ -1,15 +1,22 @@
 # 日常開発の全体フローマップ
 
-## 1本の流れで見る
+## フェーズ別に見る
+
+### 1. ローカルで進める
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Issue / 受入条件を確認] --> B[local main を最新化]
     B --> C[feature branch を作成]
     C --> D[Copilot を使って実装]
     D --> E[ローカルで test / build 確認]
-    E --> F[origin/feature に push]
-    F --> G[Pull Request を作成]
+```
+
+### 2. 共有して統合する
+
+```mermaid
+flowchart LR
+    F[origin/feature に push] --> G[Pull Request を作成]
     G --> H[レビュー対応]
     H --> I[CI 通過]
     I --> J[main に merge]

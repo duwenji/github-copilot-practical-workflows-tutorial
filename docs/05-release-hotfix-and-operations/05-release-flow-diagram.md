@@ -1,20 +1,28 @@
 # release / hotfix の流れを図で見る
 
-## 全体フロー
+## フェーズ別フロー
+
+### 1. 通常 release の流れ
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[main] --> B[release/* branch]
     B --> C[最終確認 / release note]
     C --> D[Tag / Release]
     D --> E[Deploy]
     E --> F[Monitor]
-    F --> G{問題あり?}
+```
+
+### 2. 問題発生時の hotfix
+
+```mermaid
+flowchart LR
+    F[Monitor] --> G{問題あり?}
     G -- No --> H[通常運用へ]
     G -- Yes --> I[hotfix/* branch]
     I --> J[最小修正 + review + test]
     J --> K[再リリース または rollback]
-    K --> A
+    K --> A[main に反映]
 ```
 
 ## ポイント
