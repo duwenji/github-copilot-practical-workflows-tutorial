@@ -73,68 +73,72 @@ $titleBrush = New-Object System.Drawing.SolidBrush($white)
 $subBrush = New-Object System.Drawing.SolidBrush($softWhite)
 $mintBrush = New-Object System.Drawing.SolidBrush($mint)
 
-$labelFont = New-Object System.Drawing.Font('Segoe UI', 34, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$enTitleFont = New-Object System.Drawing.Font('Segoe UI Semibold', 50, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$jpTitleFont = New-Object System.Drawing.Font('Yu Gothic UI', 120, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$jpTitleFont2 = New-Object System.Drawing.Font('Yu Gothic UI', 112, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$subTitleFont = New-Object System.Drawing.Font('Yu Gothic UI', 42, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
-$tagFont = New-Object System.Drawing.Font('Yu Gothic UI', 28, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
-$authorFont = New-Object System.Drawing.Font('Yu Gothic UI', 40, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$labelFont = New-Object System.Drawing.Font('Segoe UI', 30, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$enTitleFont = New-Object System.Drawing.Font('Segoe UI Semibold', 46, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$jpTitleFont = New-Object System.Drawing.Font('Yu Gothic UI', 112, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$jpTitleFont2 = New-Object System.Drawing.Font('Yu Gothic UI', 104, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$subTitleFont = New-Object System.Drawing.Font('Yu Gothic UI', 38, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
+$tagFont = New-Object System.Drawing.Font('Yu Gothic UI', 26, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
+$authorFont = New-Object System.Drawing.Font('Yu Gothic UI', 36, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
 
 $left = 120
+$coverLabel = 'PRACTICAL WORKFLOWS'
+$coverEnTitle = 'GitHub + GitHub Copilot'
+$coverTitleLine1 = '実務ワークフロー'
+$coverTitleLine2 = '実践ガイド'
+$coverSubtitle = "日常開発から協業、共有資産管理、`nrelease / hotfix までを`nシナリオで学ぶ"
+$tagItems = @('日常開発', '協業', '共有資産', '運用')
 
-$graphics.DrawString('PRACTICAL WORKFLOWS', $labelFont, $mintBrush, 120, 150)
-$graphics.DrawString('GitHub + GitHub Copilot', $enTitleFont, $titleBrush, $left, 250)
-$graphics.DrawString('実務シナリオ', $jpTitleFont, $titleBrush, $left, 420)
-$graphics.DrawString('完全チュートリアル', $jpTitleFont2, $titleBrush, $left, 590)
+$graphics.DrawString($coverLabel, $labelFont, $mintBrush, 120, 150)
+$graphics.DrawString($coverEnTitle, $enTitleFont, $titleBrush, $left, 248)
+$graphics.DrawString($coverTitleLine1, $jpTitleFont, $titleBrush, $left, 412)
+$graphics.DrawString($coverTitleLine2, $jpTitleFont2, $titleBrush, $left, 576)
 
-$subtitleRect = New-Object System.Drawing.RectangleF(120, 860, 1320, 270)
+$subtitleRect = New-Object System.Drawing.RectangleF(120, 830, 1320, 250)
 $graphics.DrawString(
-    "日常開発、協業、共有資産管理、`nリリース運用を一気通貫で学ぶ",
+    $coverSubtitle,
     $subTitleFont,
     $subBrush,
     $subtitleRect
 )
 
-$tagItems = @('日常開発', '協業', '共有資産管理', 'リリース運用')
 $tagX = 120
-$tagY = 1280
+$tagY = 1215
 foreach ($tag in $tagItems) {
     $size = $graphics.MeasureString($tag, $tagFont)
-    $tagWidth = [Math]::Ceiling($size.Width) + 54
-    $tagHeight = 66
-    $tagPath = New-RoundedRectPath -X $tagX -Y $tagY -Width $tagWidth -Height $tagHeight -Radius 24
-    $tagBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(48, 255, 255, 255))
-    $tagPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(95, 127, 203, 255), 2)
+    $tagWidth = [Math]::Ceiling($size.Width) + 52
+    $tagHeight = 62
+    $tagPath = New-RoundedRectPath -X $tagX -Y $tagY -Width $tagWidth -Height $tagHeight -Radius 22
+    $tagBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(44, 255, 255, 255))
+    $tagPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(88, 127, 203, 255), 2)
     $graphics.FillPath($tagBrush, $tagPath)
     $graphics.DrawPath($tagPen, $tagPath)
-    $graphics.DrawString($tag, $tagFont, $titleBrush, $tagX + 26, $tagY + 13)
-    $tagX += $tagWidth + 20
+    $graphics.DrawString($tag, $tagFont, $titleBrush, $tagX + 24, $tagY + 12)
+    $tagX += $tagWidth + 18
 }
 
-$panelPath = New-RoundedRectPath -X 120 -Y 1760 -Width 1360 -Height 500 -Radius 36
-$panelBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(42, 7, 13, 26))
-$panelPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(90, 120, 255, 214), 2)
+$panelPath = New-RoundedRectPath -X 120 -Y 1705 -Width 1360 -Height 380 -Radius 36
+$panelBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(38, 7, 13, 26))
+$panelPen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(88, 120, 255, 214), 2)
 $graphics.FillPath($panelBrush, $panelPath)
 $graphics.DrawPath($panelPen, $panelPath)
 
-$bulletFont = New-Object System.Drawing.Font('Yu Gothic UI', 34, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
+$bulletFont = New-Object System.Drawing.Font('Yu Gothic UI', 32, [System.Drawing.FontStyle]::Regular, [System.Drawing.GraphicsUnit]::Pixel)
 $bulletBrush = New-Object System.Drawing.SolidBrush($softWhite)
 $bullets = @(
     'Issue → Branch → PR → Review → Merge',
-    'fork / upstream の協業パターン',
-    'submodule / subtree の使い分け',
-    'release / hotfix とチーム標準化'
+    'fork / upstream・submodule / subtree',
+    'release / hotfix・チーム標準化'
 )
 
-$bulletY = 1835
+$bulletY = 1778
 foreach ($line in $bullets) {
     $graphics.FillEllipse((New-Object System.Drawing.SolidBrush($sky)), 160, $bulletY + 14, 12, 12)
     $graphics.DrawString($line, $bulletFont, $bulletBrush, 190, $bulletY)
-    $bulletY += 92
+    $bulletY += 94
 }
 
-$graphics.DrawString('杜 文吉', $authorFont, $titleBrush, 120, 2360)
+$graphics.DrawString('杜 文吉', $authorFont, $titleBrush, 120, 2335)
 
 $bitmap.Save($OutputPng, [System.Drawing.Imaging.ImageFormat]::Png)
 $bitmap.Save($OutputJpg, [System.Drawing.Imaging.ImageFormat]::Jpeg)

@@ -6,6 +6,7 @@
   "license": "MIT",
   "author": "Duwenji",
   "scripts": {
+    "cover:generate": "powershell -ExecutionPolicy Bypass -File ./tools/generate-cover-pattern-a.ps1",
     "ebook:build": "powershell -ExecutionPolicy Bypass -File ./.github/skills-config/ebook-build/invoke-build.ps1"
   }
 }
