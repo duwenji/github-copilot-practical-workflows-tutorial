@@ -2,41 +2,72 @@
 
 ## 典型シナリオ
 
-PR を作成したら `GitHub Actions` が走り、lint / test / build の結果を確認する場面です。
+PR を作成したら `GitHub Actions` が自動で走り、lint / test / build の結果を GitHub 上で確認する場面です。
+CI が赤い（失敗している）場合は原因を特定して修正してから merge します。
 
 ## コンセプトと仕組み
 
-- `.github/workflows/` に配置した YAML ファイルによる CI/CD 定義の仕組み
-- `push` や `pull_request` などのイベントをトリガーとしたジョブの自動実行
-- `runner` と呼ばれる実行環境での独立したジョブ実行
-- `Checks` タブを使った結果確認と失敗ジョブの特定
-- `secrets` による API キーなどの機密情報の安全な管理
+- `GitHub Actions` は `.github/workflows/` 以下の YAML ファイルで定義された自動処理を実行するサービスであること
+- PR を作成・更新するたびにトリガーされ、結果を PR の `Checks` タブに表示すること
+- lint・test・build を自動化することで、人間のレビューより先に機械的なチェックを通過させること
 
 ## 基本手順
 
-1. `.github/workflows/` に YAML ファイルを配置すること
-2. トリガーイベントとジョブの設定を確認すること
-3. PR 作成後に `Checks` タブで結果を確認すること
-4. 失敗したジョブのログを開いてエラーを特定すること
-5. ローカルで再現できるか確認すること
-6. 修正して push し、再実行結果を確認すること
+1. PR を作成する（または push する）
+2. PR の `Checks` タブを開く
+3. 実行中のジョブ一覧を確認する
+4. 失敗しているジョブをクリックしてログを確認する
+5. エラー箇所をローカルで再現する
+6. 修正して push する
+7. CI が全て緑になるのを確認する
+
+## ワークフロー YAML の読み方
+
+CI の設定は `.github/workflows/` 以下の YAML ファイルに書かれています。
+
+```powershell
+# ワークフローファイルの一覧を確認する
+ls .github/workflows/
+```
+
+```yaml
+# .github/workflows/ci.yml の例
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: npm test
+```
+
+主要なキー:
+- `on`: トリガー条件（`pull_request` は PR 作成・更新時）
+- `jobs`: 実行するジョブの定義
+- `runs-on`: 実行環境（`ubuntu-latest` が一般的）
+- `steps`: ジョブ内の手順
 
 ## Copilot の使いどころ
 
-- CI エラーログの要約
-- 原因仮説の整理
-- 修正候補の比較
-- release note の下書き
+- 「このワークフロー YAML の `on` セクションを説明してください」
+- 「この CI エラーログを要約して、原因の仮説を 3 つ挙げてください」
+- 「このテスト失敗のログを見て、修正候補を提示してください」
 
 ## 注意点
 
-- 赤い CI をそのまま merge しないこと
-- 失敗ジョブを 1 つずつ潰すこと
-- Hotfix は通常フローより速くても、記録は残すこと
-- `secrets` を YAML に直接書かないこと
+- 赤い CI のまま merge しないこと
+- 失敗ジョブを 1 つずつ特定して潰すこと
+- ローカルで再現できる場合は push 前に修正すること
+- Hotfix でも CI を通す手順を省略しないこと（記録を残すため）
 
 ## 章末チェック
 
-- `GitHub Actions` の仕組みとトリガーの種類を説明できること
-- PR の `Checks` タブで失敗したジョブを特定できること
-- CI エラーの原因を Copilot と一緒に調査できること
+- PR の `Checks` タブから失敗したジョブのログを開けること
+- `.github/workflows/` の YAML の基本構造（`on`・`jobs`・`steps`）を説明できること
+- CI が赤い原因を調べる手順を 3 ステップで説明できること
