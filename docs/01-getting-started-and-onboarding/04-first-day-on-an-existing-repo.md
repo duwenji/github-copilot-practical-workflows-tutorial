@@ -14,12 +14,12 @@
 
 ## 基本手順
 
-1. `GitHub` / `VS Code` / `Copilot` の初期セットアップが完了していることを確認する
-2. `README` と開発ルールを読む
-3. `Issue` 管理の流れを把握する
-4. `copilot-instructions.md` があれば内容を読む
-5. `npm test` / `npm run build` など基本コマンドを確認してローカルで実行する
-6. レビュー文化とブランチ命名規則を確認する
+1. `GitHub` / `VS Code` / `Copilot` の初期セットアップが完了していることを確認すること
+2. `README` と開発ルールを読むこと
+3. `Issue` 管理の流れを把握すること
+4. `copilot-instructions.md` があれば内容を読むこと
+5. `npm test` / `npm run build` など基本コマンドを確認してローカルで実行すること
+6. レビュー文化とブランチ命名規則を確認すること
 
 ## チェックリスト
 
