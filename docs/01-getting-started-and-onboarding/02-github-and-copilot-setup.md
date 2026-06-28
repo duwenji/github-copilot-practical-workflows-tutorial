@@ -21,15 +21,15 @@
 
 ## 基本手順
 
-1. `VS Code` に GitHub 関連拡張を入れる
-2. GitHub にサインインする
-3. `Copilot` と `Copilot Chat` を有効化する
+1. `VS Code` に GitHub 関連拡張を入れること
+2. GitHub にサインインすること
+3. `Copilot` と `Copilot Chat` を有効化すること
    - 拡張機能ビューで `GitHub Copilot` を検索してインストールする
    - `GitHub Copilot Chat` を検索してインストールする
    - 求められたら `GitHub` アカウントでサインインし、業務で使うアカウントか確認する
    - `Copilot Chat` パネルを開き、短い質問を送って応答が返ることを確認する
    - 組織利用の場合は、ライセンスや利用ポリシーで無効化されていないか確認する
-4. `git config` でユーザー名とメールアドレスを設定する
+4. `git config` でユーザー名とメールアドレスを設定すること
 
 ```powershell
 git config --global user.name "Your Name"
