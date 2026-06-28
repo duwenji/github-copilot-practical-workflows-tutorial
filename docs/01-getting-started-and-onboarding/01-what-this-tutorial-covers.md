@@ -35,10 +35,10 @@
 
 ## この教材の読み方
 
-- まずは `01-getting-started-and-onboarding` で `GitHub` / `VS Code` / `Copilot` の初期設定を済ませる
-- 次に `02-daily-development-workflows` を通して基本の流れをつかむ
-- その後 `03-collaboration-patterns` と `04-shared-assets-and-multi-repo-management` で実務の広がりを学ぶ
-- 最後に `05` と `06` で運用・標準化まで確認する
+- まずは `01-getting-started-and-onboarding` で `GitHub` / `VS Code` / `Copilot` の初期設定を済ませること
+- 次に `02-daily-development-workflows` を通して基本の流れをつかむこと
+- その後 `03-collaboration-patterns` と `04-shared-assets-and-multi-repo-management` で実務の広がりを学ぶこと
+- 最後に `05` と `06` で運用・標準化まで確認すること
 
 ## Copilot の使いどころ
 
@@ -54,7 +54,7 @@
 
 ## 章末チェック
 
-- 自分の業務で頻出するシナリオを 2〜3 個挙げられる
-- GitHub と Copilot を「機能」ではなく「仕事の流れ」で捉えられる
-- この教材の章構成と読み進め方を説明できる
-- `07-reference-and-scenario-playbook` を逆引きとして活用する場面をイメージできる
+- 自分の業務で頻出するシナリオを 2〜3 個挙げられること
+- GitHub と Copilot を「機能」ではなく「仕事の流れ」で捉えられること
+- この教材の章構成と読み進め方を説明できること
+- `07-reference-and-scenario-playbook` を逆引きとして活用する場面をイメージできること

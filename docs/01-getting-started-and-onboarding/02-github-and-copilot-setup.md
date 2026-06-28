@@ -59,9 +59,9 @@ git config --global user.email "you@example.com"
 
 ## つまずきやすい点
 
-- `Copilot Chat` が表示されないときは、拡張が有効か、再サインインが必要ないかを確認する
-- ライセンスが見つからないときは、個人契約か組織割り当てかを確認する
-- 会社管理の環境では、管理者側で機能制限されている場合がある
+- `Copilot Chat` が表示されないときは、拡張が有効か、再サインインが必要ないかを確認すること
+- ライセンスが見つからないときは、個人契約か組織割り当てかを確認すること
+- 会社管理の環境では、管理者側で機能制限されている場合があること
 
 ## Copilot の使いどころ
 
@@ -78,6 +78,6 @@ git config --global user.email "you@example.com"
 
 ## 章末チェック
 
-- `VS Code` で `GitHub Copilot` と `Copilot Chat` が動作することを確認できる
-- `git config --global user.name` と `user.email` が正しく設定されている
-- 所属する GitHub 組織に参加済みで、Copilot のライセンスが有効であることを確認できる
+- `VS Code` で `GitHub Copilot` と `Copilot Chat` が動作することを確認できること
+- `git config --global user.name` と `user.email` が正しく設定されていること
+- 所属する GitHub 組織に参加済みで、Copilot のライセンスが有効であることを確認できること
