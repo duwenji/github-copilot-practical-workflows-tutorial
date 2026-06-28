@@ -7,12 +7,12 @@
 
 ## コンセプトと仕組み
 
-- `GitHub Pages` は、リポジトリのコンテンツを静的サイトとして公開する機能です。
-- `.github/workflows/pages.yml` に定義したワークフローが自動でビルドと公開を行います。
-- `GitHub Actions` を選択することで、カスタムビルドスクリプトを組み込めます。
-- `validate.yml` で事前に ebook ビルドの成否を確認してから公開します。
-- 公開 URL は `https://<org>.github.io/<repo>/` の形式になります。
-- Jekyll ビルドを使用する場合は `_config.yml` でサイト設定を管理します。
+- リポジトリのコンテンツを静的サイトとして公開する `GitHub Pages` の機能概要
+- `.github/workflows/pages.yml` に定義したワークフローによる自動ビルドと公開
+- `GitHub Actions` 選択によるカスタムビルドスクリプトの組み込み
+- `validate.yml` を使った ebook ビルド成否の事前確認
+- `https://<org>.github.io/<repo>/` 形式の公開 URL
+- Jekyll ビルド使用時の `_config.yml` によるサイト設定の管理
 
 ## 基本手順
 
@@ -24,16 +24,16 @@
 
 ## このリポジトリの公開導線
 
-- `docs/` を GitHub Pages で公開する
-- `pages.yml` が `main` への push をトリガーに動く
-- `validate.yml` で ebook build を事前確認する
-- 公開前に `npm run ebook:build` でローカル確認を行う
+- `docs/` を GitHub Pages で公開すること
+- `pages.yml` が `main` への push をトリガーとした自動実行
+- `validate.yml` による ebook build の事前確認
+- 公開前の `npm run ebook:build` によるローカル確認の実施
 
 ## 事前確認
 
 - `npm run ebook:build`
   - `run`: `package.json` に定義した script を実行すること
-  - `ebook:build`: ebook 出力を生成して build 状態を確認する script 名
+  - `ebook:build`: ebook 出力を生成して build 状態を確認するスクリプト名
 
 ```powershell
 npm run ebook:build
@@ -44,7 +44,7 @@ npm run ebook:build
 ## コマンドと引数の意味
 
 - `npm run ebook:build`
-  - `npm run`: `package.json` の `scripts` に定義したコマンドを実行する
+  - `npm run`: `package.json` の `scripts` に定義したコマンドを実行すること
   - `ebook:build`: ebook 形式での出力とビルド確認を行うスクリプト名
 
 ## Copilot の使いどころ

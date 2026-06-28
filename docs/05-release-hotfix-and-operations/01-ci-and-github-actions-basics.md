@@ -6,11 +6,11 @@ PR を作成したら `GitHub Actions` が走り、lint / test / build の結果
 
 ## コンセプトと仕組み
 
-- `GitHub Actions` は、リポジトリ内の `.github/workflows/` に配置した YAML ファイルで CI/CD を定義する仕組みです。
-- `push` や `pull_request` などのイベントをトリガーに、ジョブが自動実行されます。
-- 各ジョブは `runner` と呼ばれる実行環境で独立して動作します。
-- `Checks` タブで結果を確認し、失敗したジョブを特定できます。
-- `secrets` を使って API キーなどの機密情報を安全に扱えます。
+- `.github/workflows/` に配置した YAML ファイルによる CI/CD 定義の仕組み
+- `push` や `pull_request` などのイベントをトリガーとしたジョブの自動実行
+- `runner` と呼ばれる実行環境での独立したジョブ実行
+- `Checks` タブを使った結果確認と失敗ジョブの特定
+- `secrets` による API キーなどの機密情報の安全な管理
 
 ## 基本手順
 

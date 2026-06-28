@@ -6,11 +6,11 @@
 
 ## コンセプトと仕組み
 
-- release と hotfix の違いを実際の操作で体験するためのドリルです。
-- `npm run ebook:build` でビルド確認を行いながら、リリース判断の流れを学びます。
-- Copilot を活用して release note の下書きやリスク洗い出しを練習します。
-- rollback 判断の条件を言語化することで、緊急時の対応力を養います。
-- 実際のコマンドと判断基準を組み合わせて、実務に近い流れを体験できます。
+- 実際の操作を通じた release と hotfix の違いの体験ドリル
+- `npm run ebook:build` によるビルド確認を交えたリリース判断の流れの習得
+- Copilot を活用した release note 下書きとリスク洗い出しの練習
+- rollback 判断条件の言語化による緊急時の対応力の習得
+- 実際のコマンドと判断基準を組み合わせた実務に近い流れの体験
 
 ## 基本手順
 
@@ -28,7 +28,7 @@ npm run ebook:build
 ```
 
 - `npm run ebook:build`
-  - `ebook:build`: ebook 出力を生成し、公開前の build 成否を確認する
+  - `ebook:build`: ebook 出力を生成し、公開前の build 成否を確認すること
 
 > release 候補を判断するときは、「内容が良さそうか」だけでなく、**検証コマンドが通るか** を必ずセットで見ます。
 
