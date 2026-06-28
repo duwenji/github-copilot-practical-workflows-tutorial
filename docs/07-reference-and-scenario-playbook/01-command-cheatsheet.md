@@ -38,7 +38,7 @@
 ### `git commit -m "Add feature"`
 - **用途:** staging 済みの変更を commit として記録
 - **引数の意味:**
-  - `-m`: commit message をその場で指定する
+  - `-m`: commit message をその場で指定するオプション
   - `"Add feature"`: commit message の本文
 - **注意:** 後から見て内容が分かる短い説明にします。
 
@@ -60,7 +60,7 @@
 ### `git remote add upstream https://github.com/ORIGINAL_OWNER/REPO.git`
 - **用途:** 本家 repository を `upstream` として追加
 - **引数の意味:**
-  - `add`: remote を新規登録する
+  - `add`: remote 新規登録用コマンド
   - `upstream`: 追加後の remote 名。慣例的に「本家」をこう呼ぶ
   - `https://github.com/ORIGINAL_OWNER/REPO.git`: 本家 repository の URL
 - **注意:** 自分の fork は通常 `origin`、本家は `upstream` です。
@@ -82,8 +82,8 @@
 ### `git submodule update --init --recursive`
 - **用途:** submodule の初期化とネストした submodule の取得
 - **引数の意味:**
-  - `--init`: 未初期化の submodule を初期化する
-  - `--recursive`: 子孫の submodule まで再帰的に処理する
+  - `--init`: 未初期化 submodule を初期化するオプション
+  - `--recursive`: 子孫 submodule まで再帰的に処理するオプション
 - **よくある場面:** clone 直後や shared assets を含む project を初めて開く場面
 
 ### `git submodule status`

@@ -18,7 +18,7 @@
 ### 検証
 
 - [ ] `npm run ebook:build` が成功すること
-  - `run`: `package.json` の script を実行する
+  - `run`: `package.json` の script を実行するコマンド
   - `ebook:build`: ebook 出力を生成して公開物を確認する script
 - [ ] GitHub Pages の workflow 設定があること
 - [ ] リンク切れがないこと
