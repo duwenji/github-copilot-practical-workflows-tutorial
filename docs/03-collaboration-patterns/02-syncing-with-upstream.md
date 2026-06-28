@@ -59,7 +59,7 @@ git push origin main
 
 ## 章末チェック
 
-- [ ] `git fetch` と `git pull` の違いを説明できる
-- [ ] `upstream/main` を `local main` へ統合する手順を実行できる
+- [ ] `git fetch` と `git pull` の違いを説明できること
+- [ ] `upstream/main` を `local main` へ統合する手順を実行できること
 - [ ] 同期後に自分の fork を更新する意味を理解していること
-- [ ] コンフリクトが発生したときの対応方針を説明できる
+- [ ] コンフリクトが発生したときの対応方針を説明できること

@@ -56,7 +56,7 @@ git fetch upstream
 
 ## 章末チェック
 
-- [ ] `origin` と `upstream` の役割の違いを説明できる
-- [ ] `git remote add upstream <URL>` で本家を登録できる
-- [ ] `git fetch upstream` で本家の最新履歴を取得できる
+- [ ] `origin` と `upstream` の役割の違いを説明できること
+- [ ] `git remote add upstream <URL>` で本家を登録できること
+- [ ] `git fetch upstream` で本家の最新履歴を取得できること
 - [ ] 定期同期の目的と重要性を理解していること
