@@ -23,5 +23,6 @@ kdpSelect: "No"
 ageRange: 指定なし
 gradeRange: 指定なし
 trimSize: "6in x 9in"
-bleed: "No bleed"
+bleed: "0.125in"
+coverSize: "12.525in x 9.25in"
 layout: fixed-layout PDF

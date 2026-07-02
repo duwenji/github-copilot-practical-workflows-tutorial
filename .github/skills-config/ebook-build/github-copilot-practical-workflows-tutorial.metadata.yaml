@@ -25,6 +25,14 @@ chapters:
   auto-discover: true
   dir-pattern: "^\\d{2}-"
   file-pattern: "^\\d{2}-.*\\.md$"
+  dir-titles:
+    01-getting-started-and-onboarding: "はじめに・オンボーディング"
+    02-daily-development-workflows: "日常の開発ワークフロー"
+    03-collaboration-patterns: "協業パターン"
+    04-shared-assets-and-multi-repo-management: "共有資産とマルチリポジトリ管理"
+    05-release-hotfix-and-operations: "リリース・ホットフィックス・運用"
+    06-team-standards-and-governance: "チーム標準とガバナンス"
+    07-reference-and-scenario-playbook: "リファレンスとシナリオプレイブック"
 include-readme: false
 version: "0.1"
 revision-date: "2026-04-04"
