@@ -1,6 +1,6 @@
 # KDP Registration Package: GitHub + GitHub Copilot 実務シナリオ完全チュートリアル
 
-- Generated: 2026-07-04 23:50:43
+- Generated: 2026-07-05 01:46:15
 - Project: github-copilot-practical-workflows-tutorial
 - Metadata: C:\Dev\tutorials\github-copilot-practical-workflows-tutorial\.\.github\skills-config\ebook-build\github-copilot-practical-workflows-tutorial.metadata.yaml
 - KDP Metadata: C:\Dev\tutorials\github-copilot-practical-workflows-tutorial\.\.github\skills-config\ebook-build\github-copilot-practical-workflows-tutorial.kdp.yaml
