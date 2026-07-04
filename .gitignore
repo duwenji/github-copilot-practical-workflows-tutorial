@@ -1,7 +1,5 @@
 node_modules/
 _site/
-ebook-output/
-cover-output/
 .DS_Store
 Thumbs.db
 *.log
